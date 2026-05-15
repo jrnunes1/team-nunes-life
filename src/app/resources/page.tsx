@@ -15,19 +15,24 @@ const sections = [
       "All you need is a ball and a few cones (or shoes/water bottles as markers). Do these in your backyard or driveway!",
     videos: [
       {
-        title: "5-Minute Ball Mastery for Kids (No Space Needed)",
-        url: "https://www.youtube.com/watch?v=9Kkj0qoMrSk",
-        note: "Toe taps, sole rolls, inside-outside — follow along!",
+        title: "Best Soccer Drills at Home — Kids Soccer! ⚽",
+        url: "https://www.youtube.com/watch?v=NXsvVpnCWJ4",
+        note: "Simple drills you can do by yourself in any small space",
       },
       {
-        title: "Easy Cone Dribbling for Beginners",
-        url: "https://www.youtube.com/watch?v=9Z2A5Z0XBDU",
-        note: "Set up 5 cones and weave through them — both feet",
+        title: "The Ultimate Indoor Soccer Workout for Kids",
+        url: "https://www.youtube.com/watch?v=X9f_c6LHoTI",
+        note: "Follow along — great for rainy days or small spaces",
       },
       {
-        title: "10 Easy Soccer Tricks for Kids",
-        url: "https://www.youtube.com/watch?v=9xYWgflFzag",
-        note: "Fun moves to try once you're comfortable with the ball",
+        title: "5 Easy Soccer Drills for Beginners",
+        url: "https://www.youtube.com/watch?v=79-7SEVb5Ss",
+        note: "Basic moves to get comfortable with the ball at your feet",
+      },
+      {
+        title: "Important Soccer Training for Kids",
+        url: "https://www.youtube.com/watch?v=RMiQSRNXAwI",
+        note: "Touches and control — do this every day!",
       },
     ],
   },
@@ -38,14 +43,14 @@ const sections = [
       "Find a wall (garage door, school wall, anything flat). Pass the ball and control the return.",
     videos: [
       {
-        title: "Wall Passing Drill for Kids",
-        url: "https://www.youtube.com/watch?v=MgaxOPQ8Jlg",
-        note: "Pass with inside of foot, cushion it back — repeat 50 times each foot",
+        title: "Top 3 Wall Drills to Improve Your Skills",
+        url: "https://www.youtube.com/watch?v=W3OEl4_v6Bw",
+        note: "Simple wall passing — inside of foot, cushion it back",
       },
       {
-        title: "How to Trap a Soccer Ball (for Beginners)",
-        url: "https://www.youtube.com/watch?v=DUKYOq1HJGU",
-        note: "Learn to 'kill' the ball dead with your first touch",
+        title: "1000 Touch Workout — 10-Minute Wall Passing",
+        url: "https://www.youtube.com/watch?v=1oxaF_Mx6Ok",
+        note: "Follow along and get tons of touches against a wall",
       },
     ],
   },
@@ -53,17 +58,17 @@ const sections = [
     emoji: "🛡️",
     title: "Defense & Footwork",
     description:
-      "Good defense is about staying on your toes and being patient. These drills build quick feet.",
+      "Good defense is about staying on your toes and being patient. Watch how to position your body.",
     videos: [
       {
-        title: "Defensive Footwork for Young Players",
-        url: "https://www.youtube.com/watch?v=3PnMJL_CXJY",
-        note: "Lateral shuffles, staying low, and staying balanced",
+        title: "10 Best Soccer Defending Drills for Kids (MOJO)",
+        url: "https://www.youtube.com/watch?v=MDF6tB5foI0",
+        note: "Fun drills made for youth players — learn to stay balanced",
       },
       {
-        title: "Speed & Agility Ladder Drills (No Ladder Needed!)",
-        url: "https://www.youtube.com/watch?v=bKf0UGXH5Hs",
-        note: "Use chalk lines or tape — builds the quick feet you need for 1v1",
+        title: "All About Soccer Skills: Defending (MOJO)",
+        url: "https://www.youtube.com/watch?v=yREWtO19RQc",
+        note: "Body position, jockeying, and when to step in",
       },
     ],
   },
@@ -95,7 +100,7 @@ export default function Resources() {
           <ul className="mt-3 space-y-3">
             {section.videos.map((video) => (
               <li
-                key={video.url + video.title}
+                key={video.url}
                 className="rounded-lg border border-gray-200 dark:border-gray-700 p-3"
               >
                 <a
