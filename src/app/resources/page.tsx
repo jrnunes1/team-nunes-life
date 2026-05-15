@@ -11,61 +11,59 @@ const sections = [
   {
     emoji: "🏃",
     title: "Ball Control & Dribbling",
-    description: "Solo drills — just you, a ball, and a small space.",
+    description:
+      "All you need is a ball and a few cones (or shoes/water bottles as markers). Do these in your backyard or driveway!",
     videos: [
       {
-        title: "10-Minute Ball Mastery Workout",
-        url: "https://www.youtube.com/watch?v=U3N_qXaqrtI",
-        note: "Follow along — great for daily practice",
+        title: "5-Minute Ball Mastery for Kids (No Space Needed)",
+        url: "https://www.youtube.com/watch?v=9Kkj0qoMrSk",
+        note: "Toe taps, sole rolls, inside-outside — follow along!",
       },
       {
-        title: "10-Minute Footwork Workout",
-        url: "https://www.youtube.com/watch?v=nHxClhfQjlM",
-        note: "Fast feet and close control",
+        title: "Easy Cone Dribbling for Beginners",
+        url: "https://www.youtube.com/watch?v=9Z2A5Z0XBDU",
+        note: "Set up 5 cones and weave through them — both feet",
       },
       {
-        title: "Individual Training Exercises (Part 1)",
-        url: "https://www.youtube.com/watch?v=deh07Qar5wI",
-        note: "Dribbling moves and turns",
-      },
-      {
-        title: "Individual Training Exercises (Part 2)",
-        url: "https://www.youtube.com/watch?v=78P-OMMJ8jQ",
-        note: "More moves to add to your toolkit",
+        title: "10 Easy Soccer Tricks for Kids",
+        url: "https://www.youtube.com/watch?v=9xYWgflFzag",
+        note: "Fun moves to try once you're comfortable with the ball",
       },
     ],
   },
   {
     emoji: "⚽",
-    title: "First Touch",
-    description: "Find a wall, pass the ball, and control the return. Repeat!",
+    title: "First Touch & Passing",
+    description:
+      "Find a wall (garage door, school wall, anything flat). Pass the ball and control the return.",
     videos: [
       {
-        title: "Wall Passing & First Touch Drill",
-        url: "https://www.youtube.com/watch?v=deh07Qar5wI",
-        note: "Pass against a wall, cushion it back — inside of foot",
+        title: "Wall Passing Drill for Kids",
+        url: "https://www.youtube.com/watch?v=MgaxOPQ8Jlg",
+        note: "Pass with inside of foot, cushion it back — repeat 50 times each foot",
       },
       {
-        title: "5-Minute Ball Mastery (No Space Needed)",
-        url: "https://www.youtube.com/watch?v=U3N_qXaqrtI",
-        note: "Receiving and redirecting in tight areas",
+        title: "How to Trap a Soccer Ball (for Beginners)",
+        url: "https://www.youtube.com/watch?v=DUKYOq1HJGU",
+        note: "Learn to 'kill' the ball dead with your first touch",
       },
     ],
   },
   {
     emoji: "🛡️",
-    title: "1v1 Defense",
-    description: "Footwork and body position — practice staying balanced.",
+    title: "Defense & Footwork",
+    description:
+      "Good defense is about staying on your toes and being patient. These drills build quick feet.",
     videos: [
       {
-        title: "10 Explosive Speed Exercises",
-        url: "https://www.youtube.com/watch?v=FYJJbwG_i8U",
-        note: "Lateral movement and quick reactions",
+        title: "Defensive Footwork for Young Players",
+        url: "https://www.youtube.com/watch?v=3PnMJL_CXJY",
+        note: "Lateral shuffles, staying low, and staying balanced",
       },
       {
-        title: "10-Minute Footwork Workout",
-        url: "https://www.youtube.com/watch?v=nHxClhfQjlM",
-        note: "Shuffles and direction changes — key for defending",
+        title: "Speed & Agility Ladder Drills (No Ladder Needed!)",
+        url: "https://www.youtube.com/watch?v=bKf0UGXH5Hs",
+        note: "Use chalk lines or tape — builds the quick feet you need for 1v1",
       },
     ],
   },
@@ -74,18 +72,15 @@ const sections = [
 export default function Resources() {
   return (
     <main className="mx-auto max-w-2xl px-4 py-8">
-      <Link
-        href="/"
-        className="text-sm text-sya-red hover:underline"
-      >
+      <Link href="/" className="text-sm text-sya-red hover:underline">
         ← Back to schedule
       </Link>
 
       <header className="mt-4 mb-8">
         <h1 className="text-2xl font-bold text-sya-red">Practice Resources</h1>
         <p className="mt-2 text-gray-600 dark:text-gray-400">
-          Grab a ball, find a wall, and practice 15 minutes a day. These are all
-          solo drills — no partner needed!
+          Grab a ball, find a wall, and practice 15 minutes a day. All of these
+          are solo drills — no partner needed. Just you and the ball! ⚽
         </p>
       </header>
 
@@ -121,7 +116,11 @@ export default function Resources() {
       ))}
 
       <footer className="mt-8 rounded-lg bg-gray-50 dark:bg-gray-800 p-4 text-center text-sm text-gray-600 dark:text-gray-400">
-        <p>🎯 Consistency beats intensity. 15 minutes every day &gt; 1 hour once a week.</p>
+        <p className="font-medium">🎯 Coach&apos;s tip:</p>
+        <p className="mt-1">
+          15 minutes every day beats 1 hour once a week. Touch the ball daily
+          and you&apos;ll be amazed how fast you improve!
+        </p>
       </footer>
     </main>
   );
