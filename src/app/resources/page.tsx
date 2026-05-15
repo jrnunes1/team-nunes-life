@@ -11,64 +11,56 @@ const sections = [
   {
     emoji: "🏃",
     title: "Ball Control & Dribbling",
-    description:
-      "All you need is a ball and a few cones (or shoes/water bottles as markers). Do these in your backyard or driveway!",
+    description: "Just you, a ball, and your backyard. Set up cones with shoes or water bottles!",
     videos: [
       {
-        title: "Best Soccer Drills at Home — Kids Soccer! ⚽",
+        title: "3 Easy Soccer Skills for Kids (3 min)",
+        url: "https://www.youtube.com/watch?v=-JWG43D66qI",
+        note: "Three simple moves to practice — short and fun",
+      },
+      {
+        title: "Best Soccer Drills at Home — Kids Soccer! (5 min)",
         url: "https://www.youtube.com/watch?v=NXsvVpnCWJ4",
-        note: "Simple drills you can do by yourself in any small space",
+        note: "Quick drills you can do solo in any small space",
       },
       {
-        title: "The Ultimate Indoor Soccer Workout for Kids",
-        url: "https://www.youtube.com/watch?v=X9f_c6LHoTI",
-        note: "Follow along — great for rainy days or small spaces",
-      },
-      {
-        title: "5 Easy Soccer Drills for Beginners",
+        title: "5 Easy Soccer Drills for Beginners (5 min)",
         url: "https://www.youtube.com/watch?v=79-7SEVb5Ss",
-        note: "Basic moves to get comfortable with the ball at your feet",
-      },
-      {
-        title: "Important Soccer Training for Kids",
-        url: "https://www.youtube.com/watch?v=RMiQSRNXAwI",
-        note: "Touches and control — do this every day!",
+        note: "Basic moves to get comfortable with the ball",
       },
     ],
   },
   {
     emoji: "⚽",
     title: "First Touch & Passing",
-    description:
-      "Find a wall (garage door, school wall, anything flat). Pass the ball and control the return.",
+    description: "Find a wall (garage door works great). Pass and control — that's it!",
     videos: [
       {
-        title: "Top 3 Wall Drills to Improve Your Skills",
+        title: "Top 3 Wall Drills to Improve Your Skills (4 min)",
         url: "https://www.youtube.com/watch?v=W3OEl4_v6Bw",
-        note: "Simple wall passing — inside of foot, cushion it back",
+        note: "Pass with inside of foot, cushion it back — both feet!",
       },
       {
-        title: "1000 Touch Workout — 10-Minute Wall Passing",
+        title: "1000 Touch Wall Passing Workout (10 min)",
         url: "https://www.youtube.com/watch?v=1oxaF_Mx6Ok",
-        note: "Follow along and get tons of touches against a wall",
+        note: "Follow along — tons of touches against a wall",
       },
     ],
   },
   {
     emoji: "🛡️",
-    title: "Defense & Footwork",
-    description:
-      "Good defense is about staying on your toes and being patient. Watch how to position your body.",
+    title: "1v1 Defense",
+    description: "Stay on your toes, stay patient, don't dive in!",
     videos: [
       {
-        title: "10 Best Soccer Defending Drills for Kids (MOJO)",
-        url: "https://www.youtube.com/watch?v=MDF6tB5foI0",
-        note: "Fun drills made for youth players — learn to stay balanced",
+        title: "Defending Technique — Body Position (1 min)",
+        url: "https://www.youtube.com/watch?v=aOi2_xeYHTQ",
+        note: "Super quick — shows exactly how to stand when defending",
       },
       {
-        title: "All About Soccer Skills: Defending (MOJO)",
-        url: "https://www.youtube.com/watch?v=yREWtO19RQc",
-        note: "Body position, jockeying, and when to step in",
+        title: "How to Stop Fast Attackers (3 min)",
+        url: "https://www.youtube.com/watch?v=K17wDaDcuyY",
+        note: "Stay low, stay sideways, force them to the outside",
       },
     ],
   },
@@ -84,8 +76,8 @@ export default function Resources() {
       <header className="mt-4 mb-8">
         <h1 className="text-2xl font-bold text-sya-red">Practice Resources</h1>
         <p className="mt-2 text-gray-600 dark:text-gray-400">
-          Grab a ball, find a wall, and practice 15 minutes a day. All of these
-          are solo drills — no partner needed. Just you and the ball! ⚽
+          Grab a ball, find a wall, and practice 15 minutes a day. All solo — no
+          partner needed. Just you and the ball! ⚽
         </p>
       </header>
 
@@ -123,8 +115,7 @@ export default function Resources() {
       <footer className="mt-8 rounded-lg bg-gray-50 dark:bg-gray-800 p-4 text-center text-sm text-gray-600 dark:text-gray-400">
         <p className="font-medium">🎯 Coach&apos;s tip:</p>
         <p className="mt-1">
-          15 minutes every day beats 1 hour once a week. Touch the ball daily
-          and you&apos;ll be amazed how fast you improve!
+          15 minutes every day beats 1 hour once a week. Touch the ball daily!
         </p>
       </footer>
     </main>
