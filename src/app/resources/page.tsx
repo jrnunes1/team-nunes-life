@@ -14,8 +14,8 @@ const sections = [
     description: "Just you, a ball, and your backyard. Set up cones with shoes or water bottles!",
     videos: [
       {
-        title: "Best Soccer Drills at Home — Kids Soccer! (5 min)",
-        url: "https://www.youtube.com/watch?v=NXsvVpnCWJ4",
+        title: "Soccer Drills for Kids — Ball Mastery & Toe Taps (U10)",
+        url: "https://www.youtube.com/watch?v=KaktBhbJUyg",
         note: "Quick drills you can do solo in any small space",
       },
       {
