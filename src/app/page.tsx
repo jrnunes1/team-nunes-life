@@ -116,9 +116,14 @@ export default async function Home() {
                         {getOpponent(event)}
                       </p>
                     )}
-                    <p className="mt-1 text-xs text-gray-500 dark:text-gray-400">
+                    <a
+                      href={`https://maps.google.com/?q=${encodeURIComponent(event.location)}`}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="mt-1 text-xs text-gray-500 dark:text-gray-400 underline"
+                    >
                       {event.location}
-                    </p>
+                    </a>
                   </div>
 
                   {/* Jersey indicator */}
