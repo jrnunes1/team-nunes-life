@@ -103,7 +103,6 @@ export default async function Home() {
                       <p className="mt-1 font-medium">Practice</p>
                     ) : (
                       <p className="mt-1 font-medium">
-                        vs {getOpponent(event)}{" "}
                         <span
                           className={`inline-block rounded px-2 py-0.5 text-xs font-bold text-sya-white ${
                             event.type === "home"
@@ -112,7 +111,9 @@ export default async function Home() {
                           }`}
                         >
                           {event.type === "home" ? "HOME" : "AWAY"}
-                        </span>
+                        </span>{" "}
+                        {event.type === "home" ? "vs" : "at"}{" "}
+                        {getOpponent(event)}
                       </p>
                     )}
                     <p className="mt-1 text-xs text-gray-500 dark:text-gray-400">
