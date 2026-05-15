@@ -4,6 +4,7 @@ import {
   formatTime,
   formatDayShort,
   getOpponent,
+  getArrivalTime,
 } from "@/lib/calendar";
 
 const TZ = "America/New_York";
@@ -143,6 +144,33 @@ export default async function Home() {
                     </div>
                   )}
                 </div>
+
+                {/* Game day details */}
+                {event.type !== "practice" && (
+                  <div className="mt-4 rounded-lg bg-white/60 dark:bg-gray-900/60 p-4 text-sm leading-relaxed">
+                    <p>
+                      Please arrive by{" "}
+                      <span className="font-bold underline">
+                        {getArrivalTime(event.start)}
+                      </span>{" "}
+                      so we can warm up and stretch together.
+                    </p>
+                    <p className="mt-3">
+                      Your player should have a water bottle and:
+                    </p>
+                    <ul className="mt-1 ml-5 list-disc">
+                      <li>{event.type === "home" ? "Red" : "Black"} jersey</li>
+                      <li>Shinguards</li>
+                      <li>Cleats</li>
+                      <li>No jewelry</li>
+                    </ul>
+                    <p className="mt-3 text-xs text-gray-500 dark:text-gray-400 italic">
+                      Failure to comply with the above uniform requirements will
+                      prevent your child from participating in the game until the
+                      issue has been rectified.
+                    </p>
+                  </div>
+                )}
               </li>
             ))}
           </ul>

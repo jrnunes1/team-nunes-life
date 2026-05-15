@@ -49,6 +49,11 @@ export function formatTime(date: Date): string {
   });
 }
 
+export function getArrivalTime(date: Date): string {
+  const arrival = new Date(date.getTime() - 15 * 60 * 1000);
+  return formatTime(arrival);
+}
+
 export function formatDayShort(date: Date): string {
   return date.toLocaleDateString("en-US", {
     timeZone: TZ,
