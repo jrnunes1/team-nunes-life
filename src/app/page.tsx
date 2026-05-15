@@ -20,6 +20,29 @@ export default async function Home() {
 
   return (
     <main className="mx-auto max-w-2xl px-4 py-8">
+      {isOffseason ? (
+        <section className="flex min-h-[60vh] flex-col items-center justify-center text-center">
+          <p className="text-4xl">⚽</p>
+          <p className="mt-4 text-xl font-medium">
+            Nothing scheduled, enjoy the offseason and watch some futebol!
+          </p>
+          <div className="mt-8 flex gap-3">
+            <a
+              href={`sms:${process.env.COACH_PHONE}`}
+              className="rounded-lg bg-sya-red px-5 py-2.5 text-sm font-medium text-sya-white"
+            >
+              Text Coach
+            </a>
+            <a
+              href={`mailto:${process.env.COACH_EMAIL}`}
+              className="rounded-lg bg-sya-black px-5 py-2.5 text-sm font-medium text-sya-white"
+            >
+              Email Coach
+            </a>
+          </div>
+        </section>
+      ) : (
+        <>
       <header className="mb-8 text-center">
         <h1 className="text-3xl font-bold text-sya-red">Team Nunes</h1>
         <p className="mt-1 text-sm text-gray-600 dark:text-gray-400">SYA Soccer</p>
@@ -55,16 +78,8 @@ export default async function Home() {
         </ol>
       </nav>
 
-      {/* Schedule or offseason */}
-      {isOffseason ? (
-        <section className="rounded-xl bg-gray-50 dark:bg-gray-800 p-8 text-center">
-          <p className="text-xl">⚽</p>
-          <p className="mt-2 text-lg font-medium">
-            Nothing scheduled, enjoy the offseason and watch some futebol!
-          </p>
-        </section>
-      ) : (
-        <section aria-label="This week's schedule">
+      {/* Schedule */}
+      <section aria-label="This week's schedule">
           <h2 className="mb-4 text-lg font-semibold">This Week</h2>
           <ul className="space-y-4">
             {events.map((event) => (
@@ -132,7 +147,7 @@ export default async function Home() {
             ))}
           </ul>
         </section>
-      )}
+
       {/* Contact Coach */}
       <section className="mt-10 text-center">
         <h2 className="mb-3 text-lg font-semibold">Contact Coach</h2>
@@ -151,6 +166,8 @@ export default async function Home() {
           </a>
         </div>
       </section>
+        </>
+      )}
     </main>
   );
 }
