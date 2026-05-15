@@ -14,11 +14,6 @@ const sections = [
     description: "Just you, a ball, and your backyard. Set up cones with shoes or water bottles!",
     videos: [
       {
-        title: "3 Easy Soccer Skills for Kids (3 min)",
-        url: "https://www.youtube.com/watch?v=-JWG43D66qI",
-        note: "Three simple moves to practice — short and fun",
-      },
-      {
         title: "Best Soccer Drills at Home — Kids Soccer! (5 min)",
         url: "https://www.youtube.com/watch?v=NXsvVpnCWJ4",
         note: "Quick drills you can do solo in any small space",
@@ -27,6 +22,11 @@ const sections = [
         title: "5 Easy Soccer Drills for Beginners (5 min)",
         url: "https://www.youtube.com/watch?v=79-7SEVb5Ss",
         note: "Basic moves to get comfortable with the ball",
+      },
+      {
+        title: "[Advanced] Dribbling Tricks (3 min)",
+        url: "https://www.youtube.com/watch?v=-JWG43D66qI",
+        note: "Fun moves to try once you're comfortable with the ball",
       },
     ],
   },
