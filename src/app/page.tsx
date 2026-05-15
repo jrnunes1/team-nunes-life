@@ -199,6 +199,12 @@ export default async function Home() {
             Email
           </a>
         </div>
+        <a
+          href="/resources"
+          className="mt-4 inline-block text-sm text-sya-red hover:underline"
+        >
+          Practice Drills →
+        </a>
       </section>
         </>
       )}
