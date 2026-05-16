@@ -19,11 +19,6 @@ const sections = [
         note: "Quick drills you can do solo in any small space",
       },
       {
-        title: "5 Easy Soccer Drills for Beginners (5 min)",
-        url: "https://www.youtube.com/watch?v=79-7SEVb5Ss",
-        note: "Basic moves to get comfortable with the ball",
-      },
-      {
         title: "[Advanced] Dribbling Tricks (3 min)",
         url: "https://www.youtube.com/watch?v=-JWG43D66qI",
         note: "Fun moves to try once you're comfortable with the ball",
@@ -40,10 +35,17 @@ const sections = [
         url: "https://www.youtube.com/watch?v=W3OEl4_v6Bw",
         note: "Pass with inside of foot, cushion it back — both feet!",
       },
+    ],
+  },
+  {
+    emoji: "🎯",
+    title: "Shooting",
+    description: "Plant your foot, lock your ankle, and follow through!",
+    videos: [
       {
-        title: "1000 Touch Wall Passing Workout (10 min)",
-        url: "https://www.youtube.com/watch?v=1oxaF_Mx6Ok",
-        note: "Follow along — tons of touches against a wall",
+        title: "How to Get More Power on Your Shot (short)",
+        url: "https://www.youtube.com/shorts/nR0_cd6vQiM",
+        note: "Plant foot next to the ball, strike with your laces — not your toe!",
       },
     ],
   },
