@@ -25,7 +25,7 @@ export default async function Home() {
         <section className="flex min-h-[60vh] flex-col items-center justify-center text-center">
           <p className="text-4xl">⚽</p>
           <p className="mt-4 text-xl font-medium">
-            Nothing scheduled, enjoy the offseason and watch some futebol!
+            Nothing scheduled this week — enjoy the time off! ☀️
           </p>
           <div className="mt-8 flex gap-3">
             <a
