@@ -41,6 +41,15 @@ export default async function Home() {
               Email Coach
             </a>
           </div>
+          <div className="mt-8">
+            <h2 className="text-lg font-semibold">At-home Resources</h2>
+            <a
+              href="/resources"
+              className="mt-2 inline-block text-sm text-sya-red hover:underline"
+            >
+              Practice Drills
+            </a>
+          </div>
         </section>
       ) : (
         <>
