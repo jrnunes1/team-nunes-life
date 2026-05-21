@@ -5,6 +5,7 @@ export const metadata: Metadata = {
   title: "Team Nunes | SYA Soccer Schedule",
   description:
     "Weekly schedule for Team Nunes — SYA soccer practices and games in Centreville, Virginia.",
+  robots: { index: false, follow: false },
 };
 
 export default function RootLayout({
