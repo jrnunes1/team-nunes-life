@@ -14,17 +14,16 @@ export interface TeamEvent {
   type: "home" | "away" | "practice";
 }
 
-function getMonday(date: Date): Date {
+function getSunday(date: Date): Date {
   const d = new Date(date);
   const day = d.getDay();
-  const diff = day === 0 ? -6 : 1 - day;
-  d.setDate(d.getDate() + diff);
+  d.setDate(d.getDate() - day);
   d.setHours(0, 0, 0, 0);
   return d;
 }
 
-function getSunday(monday: Date): Date {
-  const d = new Date(monday);
+function getSaturday(sunday: Date): Date {
+  const d = new Date(sunday);
   d.setDate(d.getDate() + 6);
   d.setHours(23, 59, 59, 999);
   return d;
@@ -80,8 +79,8 @@ export async function getWeekEvents(): Promise<{
   const vevents = comp.getAllSubcomponents("vevent");
 
   const now = new Date();
-  const monday = getMonday(now);
-  const sunday = getSunday(monday);
+  const sunday = getSunday(now);
+  const saturday = getSaturday(sunday);
 
   const events: TeamEvent[] = vevents
     .map((ve) => {
@@ -97,12 +96,12 @@ export async function getWeekEvents(): Promise<{
         type: parseEventType(event.summary),
       };
     })
-    .filter((e) => e.start >= monday && e.start <= sunday)
+    .filter((e) => e.start >= sunday && e.start <= saturday)
     .sort((a, b) => a.start.getTime() - b.start.getTime());
 
   const weekDays: Date[] = [];
   for (let i = 0; i < 7; i++) {
-    const d = new Date(monday);
+    const d = new Date(sunday);
     d.setDate(d.getDate() + i);
     weekDays.push(d);
   }
