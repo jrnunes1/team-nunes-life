@@ -20,6 +20,8 @@ interface WeekData {
   events: TeamEvent[];
   weekDays: string[];
   today: string;
+  offset: number;
+  maxOffset: number;
 }
 
 function isSameDay(a: Date, b: Date): boolean {
@@ -83,7 +85,8 @@ export default function Home() {
   }, [offset, fetchWeek]);
 
   const goBack = () => setOffset((o) => o - 1);
-  const goForward = () => setOffset((o) => o + 1);
+  const goForward = () =>
+    setOffset((o) => (data && o >= data.maxOffset ? o : o + 1));
   const goToday = () => setOffset(0);
 
   if (!data) {
@@ -98,6 +101,7 @@ export default function Home() {
   const todayDate = new Date(today);
   const isOffseason = events.length === 0;
   const isCurrentWeek = offset === 0;
+  const atLastWeek = offset >= data.maxOffset;
 
   return (
     <main className="mx-auto max-w-2xl px-4 py-8">
@@ -124,8 +128,9 @@ export default function Home() {
               </p>
               <button
                 onClick={goForward}
+                disabled={atLastWeek}
                 aria-label="Next week"
-                className="rounded-lg px-3 py-2 text-lg font-bold text-sya-red hover:bg-gray-100 dark:hover:bg-gray-800"
+                className="rounded-lg px-3 py-2 text-lg font-bold text-sya-red hover:bg-gray-100 dark:hover:bg-gray-800 disabled:invisible"
               >
                 ›
               </button>
@@ -204,8 +209,9 @@ export default function Home() {
               </div>
               <button
                 onClick={goForward}
+                disabled={atLastWeek}
                 aria-label="Next week"
-                className="rounded-lg px-3 py-2 text-lg font-bold text-sya-red hover:bg-gray-100 dark:hover:bg-gray-800"
+                className="rounded-lg px-3 py-2 text-lg font-bold text-sya-red hover:bg-gray-100 dark:hover:bg-gray-800 disabled:invisible"
               >
                 ›
               </button>
